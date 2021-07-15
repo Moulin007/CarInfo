@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.demo.retrofitdemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/carlist"
+        android:label="CarInfo"
+        android:networkSecurityConfig="@xml/secyurity"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RetroFitDemo"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Bike_info.fragment.activity.BikeVariantActivity"></activity>
+        <activity android:name=".Bike_info.fragment.activity.BikeDetailsActivity" />
+        <activity android:name=".Bike_info.fragment.activity.BikeModelActivity" />
+        <activity android:name=".CarInfo.activity.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CarInfo.activity.activity.CarVariantsActivity" />
+        <activity android:name=".CarInfo.activity.activity.CarModelActivity" />
+        <activity android:name=".CarInfo.activity.activity.CarDetailsActivity" />
+    </application>
+
+</manifest>
